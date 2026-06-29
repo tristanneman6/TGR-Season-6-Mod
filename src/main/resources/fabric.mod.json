@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tgr-season-6-boss-mod",
+	"version": "${version}",
+	"name": "TGR Season 6 Boss mod",
+	"description": "This is the mod used in TGR season 6's boss fight against The Floating Lodestone.",
+	"authors": [
+		"DoggyGames"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/tristanneman6/TGR-Season-6-Mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tgr-season-6-boss-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"tristanneman6.tgrseason6mod.TGRSeason6BossMod"
+		],
+		"fabric-datagen": [
+			"tristanneman6.tgrseason6mod.TGRSeason6BossModDataGenerator"
+		],
+		"client": [
+			"tristanneman6.tgrseason6mod.TGRSeason6BossModClient"
+		]
+	},
+	"mixins": [
+		"tgr-season-6-boss-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
