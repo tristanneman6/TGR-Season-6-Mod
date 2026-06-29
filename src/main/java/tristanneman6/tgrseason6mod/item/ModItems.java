@@ -9,8 +9,8 @@ import net.minecraft.util.Identifier;
 import tristanneman6.tgrseason6mod.TGRSeason6BossMod;
 
 public class ModItems {
-    public static final  Item BOTTLE_OF_VOID = registerItem("bottle_of_void", new Item(new Item.Settings()));
-
+    public static final Item BOTTLE_OF_VOID = registerItem("bottle_of_void", new Item(new Item.Settings()));
+    public static final Item MECHANICAL_WING = registerItem("mechanical_wing", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TGRSeason6BossMod.MOD_ID, name), item);
@@ -21,6 +21,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(BOTTLE_OF_VOID);
+            entries.add(MECHANICAL_WING);
         });
     }
 }
