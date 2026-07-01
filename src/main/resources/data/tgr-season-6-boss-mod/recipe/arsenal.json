@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "tgr-season-6-boss-mod:bottle_of_void"
+    },
+    "$": {
+      "item": "tgr-season-6-boss-mod:thruster"
+    },
+    "%": {
+      "item": "tgr-season-6-boss-mod:mechanical_wing"
+    },
+    "£": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "*": {
+      "item": "minecraft:lodestone"
+    },
+    "=": {
+      "item": "minecraft:enchanted_golden_apple"
+    }
+  },
+  "pattern": [
+    "£*£",
+    "%#%",
+    "$=$"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tgr-season-6-boss-mod:arsenal"
+  }
+}
